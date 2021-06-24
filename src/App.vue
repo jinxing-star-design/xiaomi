@@ -5,10 +5,19 @@
 </template>
 
 <script>
-
+import storage from './storage/index.js'
 export default {
   name: 'App',
   components: {
+    
+  },
+  data() {
+    return {
+
+    }
+  },
+  mounted() {
+    storage.setItem('a',1);
     
   }
 }
